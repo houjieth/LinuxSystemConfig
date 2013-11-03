@@ -1,0 +1,19 @@
+1. install thinkfan package
+3. load kernel module 'coretemp'
+4. add the following three sensor entries to /etc/thinkfan.conf just before the temperature levels:
+
+sensor /sys/devices/virtual/hwmon/hwmon0/temp1_input
+sensor /sys/devices/virtual/hwmon/hwmon0/temp2_input
+
+5. add the following to /etc/modprobe.d/thinkfan.conf:
+
+options thinkpad_acpi fan_control=1
+
+6. reload kernel module 'thinkpad_acpi'
+7. set START="yes" in /etc/default/thinkfan
+8. start thinkfan: /etc/init.d/thinkfan start
+
+9. check whether it works: cat /proc/acpi/ibm/fan
+
+if level has a value between 0 and 7, and changes by times, your thinkfan daemon works.
+
