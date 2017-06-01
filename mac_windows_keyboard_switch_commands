@@ -1,0 +1,11 @@
+# switch to windows fn keys
+echo 1 | sudo tee /sys/module/hid_apple/parameters/fnmode
+
+# switch to apple fn keys
+echo 2 | sudo tee /sys/module/hid_apple/parameters/fnmode
+
+# swap alt and win
+setxkbmap -option altwin:swap_alt_win
+
+# resume alt and win
+setxkbmap -option
