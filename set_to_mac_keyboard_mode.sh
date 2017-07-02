@@ -3,3 +3,7 @@ gsettings set org.gnome.desktop.input-sources xkb-options "['ctrl:nocaps']"
 xset r rate 250 30
 
 notify-send AppleKeyboardMode "Switched to Apple keyboard mode"
+
+# also mouse
+xinput set-prop "Logitech M705" 279 6
+xinput set-prop "ELECOM ELECOM TrackBall Mouse" 279 2.7
