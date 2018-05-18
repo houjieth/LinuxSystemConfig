@@ -14,4 +14,7 @@ xinput set-prop "Logitech M705" 279 6
 xinput set-prop "ELECOM ELECOM TrackBall Mouse" 279 2.7
 xinput set-prop "Logitech M510" 279 6
 
+# even set text scaling
+#gsettings set org.gnome.desktop.interface text-scaling-factor 1.0
+
 notify-send AppleKeyboardMode "Switched to Apple keyboard mode"
