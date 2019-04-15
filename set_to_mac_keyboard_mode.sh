@@ -19,4 +19,5 @@ xinput set-prop "Logitech M510" 279 6
 # even set text scaling
 #gsettings set org.gnome.desktop.interface text-scaling-factor 1.0
 
-notify-send AppleKeyboardMode "Switched to Apple keyboard mode"
+#notify-send AppleKeyboardMode "Switched to Apple keyboard mode"
+notify-send AppleKeyboard "Apple keyboard is prepared"
