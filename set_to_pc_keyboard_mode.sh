@@ -1,6 +1,3 @@
-# swap alt and win key setting & fn key setting
-gksudo "sh -c 'echo \'0\' >> /sys/module/hid_apple/parameters/swap_opt_cmd && sh -c 'echo \'1\' >> /sys/module/hid_apple/parameters/fnmode" # (works in Gnome)
-
 # ctrl as caps
 #gsettings set org.gnome.desktop.input-sources xkb-options "['ctrl:nocaps']"
 setxkbmap -option ctrl:nocaps
