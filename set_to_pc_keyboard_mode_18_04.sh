@@ -8,17 +8,10 @@ setxkbmap -option ctrl:nocaps
 xset r rate 250 30
 
 # also mouse
-<<<<<<< HEAD
-xinput set-prop "TPPS/2 IBM TrackPoint" 277 0.45
-xinput set-prop "TPPS/2 IBM TrackPoint" 279 6.0
-xinput set-prop "Logitech M705" 279 6
-xinput set-prop "ELECOM ELECOM TrackBall Mouse" 279 2.7
-=======
 #xinput set-prop "TPPS/2 IBM TrackPoint" 277 0.45
 #xinput set-prop "TPPS/2 IBM TrackPoint" 279 6.0
 #xinput set-prop "ELECOM ELECOM TrackBall Mouse" 279 2.7
 xinput set-prop "Logitech M705" 279 6
->>>>>>> Modify for 18.04 with mac keyboard
 xinput set-prop "Logitech M510" 279 6
 
 # even set text scaling
